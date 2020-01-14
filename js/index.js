@@ -73,3 +73,4 @@ navLink5.textContent = siteContent["nav"]["nav-item-5"];
 navLink6.textContent = siteContent["nav"]["nav-item-6"];
 
 aTag.forEach(a => (a.style.color = "green"));
+
