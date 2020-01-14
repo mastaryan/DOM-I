@@ -40,3 +40,36 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Navigation
+const navlinks = document.querySelectorAll("nav a");
+const aTag = document.querySelectorAll("nav a");
+const newNav = document.querySelectorAll("nav a");
+const blog = document.createElement("a");
+const moreIdeas = document.createElement("a");
+
+navlinks[0].text = siteContent.nav["nav-items-1"]
+navlinks[1].text = siteContent.nav["nav-items-2"]
+navlinks[2].text = siteContent.nav["nav-items-3"]
+navlinks[3].text = siteContent.nav["nav-items-4"]
+navlinks[4].text = siteContent.nav["nav-items-5"]
+navlinks[5].text = siteContent.nav["nav-items-6"]
+
+blog.textContent = "Blog";
+moreIdeas.textContent = "More Ideas";
+blog.setAttribute("href", "#");
+moreIdeas.setAttribute("href", "#");
+blog.style.color = "green";
+moreIdeas.style.color = "green";
+
+newNav.prepend(blog);
+newNav.append(moreIdeas);
+
+navLink1.textContent = siteContent["nav"]["nav-item-1"];
+navLink2.textContent = siteContent["nav"]["nav-item-2"];
+navLink3.textContent = siteContent["nav"]["nav-item-3"];
+navLink4.textContent = siteContent["nav"]["nav-item-4"];
+navLink5.textContent = siteContent["nav"]["nav-item-5"];
+navLink6.textContent = siteContent["nav"]["nav-item-6"];
+
+aTag.forEach(a => (a.style.color = "green"));
